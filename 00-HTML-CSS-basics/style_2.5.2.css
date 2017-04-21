@@ -1,3 +1,4 @@
+/* Small screens (default) */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -9,21 +10,16 @@
   width: 100%;
 }
 
-.row {
-    height: 200px;
-}
-
 .column {
     float: left;
-    height: 200px;
 }
 
 .column.two-thirds {
-    width: 66.7%;
+    width: 100%;
 }
 
 .column.third { 
-    width: 33.3%;
+    width: 100%;
     position: relative;
     overflow: auto;
 }
@@ -80,4 +76,92 @@ h2 {
 
 .clearfix {
   *zoom: 1;
+}
+
+/* Medium screens (640px) */
+@media (min-width: 40rem) { 
+
+    *, *:before, *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .row {
+        height: 200px;
+    }
+
+    .column {
+        float: left;
+        height: 200px;
+    }
+
+    .column.two-thirds {
+        width: 66.7%;
+    }
+
+    .column.third { 
+        width: 33.3%;
+        position: relative;
+        overflow: auto;
+    }
+
+    .column.third.hidden {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+    }
+
+    .column.third.hidden:hover {
+        background-color: grey;
+        opacity: 0.5;
+    }
+
+    .column.third.hidden:hover h2 {
+        opacity: 1;
+        color: white;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    h1 {
+        font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    }
+
+    p {
+        font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    }
+
+    h2 {
+        font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+        text-align: center;
+        opacity: 0;
+        transition: .5s ease;
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        content: " ";
+        display: table;
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    .clearfix {
+        *zoom: 1;
+    }
 }
