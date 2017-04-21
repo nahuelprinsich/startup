@@ -8,22 +8,65 @@ html {
     font-family: Courier New, Courier, monospace;
 }
 
+#container {
+        margin-left:auto;
+        margin-right:auto;
+        width:960px;
+        border-radius: 20px;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
 header {
     background-color: slategrey;
     text-align: center;
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 20px;
 }
 
 nav {
     background-color: slategrey;
+    height: 400px;
+    margin: 10px 5px 5px;
+    border-radius: 20px;
+    text-align: center;
+    float: left;
+    width: 230px;
+}
+
+section {
+    height: 400px;
+    margin: 10px 5px 5px;
+    border-radius: 20px;
+    text-align: center;
+    float: left;
+    width: 460px;
+}
+
+article {
+    height: 100px;
 }
 
 aside {
     background-color: slategrey;
+    height: 400px;
+    margin: 10px 5px 5px;
+    border-radius: 20px;
+    text-align: center;
+    float: left;
+    width: 230px;
 }
 
 footer {
     background-color: slategrey;
     text-align: center;
+    height: 100px;
+    text-align: center;
+    margin: 10px 5px 5px 5px;
+    border-radius: 20px;
+    clear: both;
 }
 
 /* Definiciones de las clases */

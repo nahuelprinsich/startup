@@ -98,7 +98,7 @@ h2 {
     }
 
     .column {
-        display: inline-block;
+        float: left;
         height: 200px;
     }
 
