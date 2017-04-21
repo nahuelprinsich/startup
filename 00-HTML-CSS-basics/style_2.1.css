@@ -1,0 +1,89 @@
+/* 2.3.6 Para agregar weight a todas ls fuentes ganandole a las clases definidas en el punto 3 deberia
+agregar el pseudo elemento html::after { font-weight: bold } */
+
+/* 2.3.7 Usando !important puedo sobreescribir el estilo definido inline*/
+
+html {
+    font-size: 14px;
+    font-family: Courier New, Courier, monospace;
+}
+
+header {
+    background-color: slategrey;
+    text-align: center;
+}
+
+nav {
+    background-color: slategrey;
+}
+
+aside {
+    background-color: slategrey;
+}
+
+footer {
+    background-color: slategrey;
+    text-align: center;
+}
+
+/* Definiciones de las clases */
+
+.header h1{
+    font-size: 46px;
+}
+
+.header[class$="r"]{
+    background-color: magenta;
+}
+
+.header[class*="a"]:not([class$="r"]){
+    background-color: blue;
+}
+
+.navigation h1{
+    font-size: 12px;
+}
+
+.navigation[class$="r"]{
+    background-color: magenta;
+}
+
+.navigation[class*="a"]:not([class$="r"]){
+    background-color: blue;
+}
+
+.content h1{
+    font-size: 14px;
+}
+
+.content[class$="r"]{
+    background-color: magenta;
+}
+
+.content[class*="a"]:not([class$="r"]){
+    background-color: blue;
+}
+
+.sidebar h1{
+    font-size: 10px;
+}
+
+.sidebar[class$="r"]{
+    background-color: magenta;
+}
+
+.sidebar[class*="a"]:not([class$="r"]){
+    background-color: blue;
+}
+
+.footer h1{
+    font-size: 10px;
+}
+
+.footer[class$="r"]{
+    background-color: magenta;
+}
+
+.footer[class*="a"]:not([class$="r"]){
+    background-color: blue;
+}
